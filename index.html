@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foto Assignment</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Irish+Grover&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-content">
+    <h1>A House in the Sky</h1>
+    <p>by Alex Khalus</p>
+  </div>
+</div>
+
+<!-- SECTION -->
+<div class="section">
+  <div class="head">
+    <p>Development of the book's plot</p>
+  </div>
+
+  <div class="grid">
+
+    <!-- CARD 1 -->
+    <div class="story-card">
+      <div class="image-box">
+        <img src="img/child.jpg" alt="">
+      </div>
+      <div class="text-box">
+        <p>Since childhood, Amanda dreamed...</p>
+        <a href="#" class="more" data-modal="modal1">More</a>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="story-card">
+      <div class="image-box">
+        <img src="img/travel.jpg" alt="">
+      </div>
+      <div class="text-box">
+        <p>She becomes a freelance journalist...</p>
+        <a href="#" class="more" data-modal="modal2">More</a>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="story-card">
+      <div class="image-box">
+        <img src="img/somali.jpg" alt="">
+      </div>
+      <div class="text-box">
+        <p>Amanda travels to Somalia...</p>
+        <a href="#" class="more" data-modal="modal3">More</a>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="story-card">
+      <div class="image-box" stylle="center top;">
+        <img src="img/capture.jpg" alt="">
+      </div>
+      <div class="text-box">
+        <p>Journalists are captured...</p>
+        <a href="#" class="more" data-modal="modal4">More</a>
+      </div>
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="story-card">
+      <div class="image-box">
+        <img src="img/pain.jpg" alt="">
+      </div>
+      <div class="text-box">
+        <p>Harsh conditions of captivity...</p>
+        <a href="#" class="more" data-modal="modal5">More</a>
+      </div>
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="story-card">
+      <div class="image-box">
+        <img src="img/sky.png" alt="">
+      </div>
+      <div class="text-box">
+        <p>A House in the Sky...</p>
+        <a href="#" class="more" data-modal="modal6">More</a>
+      </div>
+    </div>
+
+    <!-- CARD 7 -->
+    <div class="story-card">
+      <div class="image-box">
+        <img src="img/weit.jpg" alt="">
+      </div>
+      <div class="text-box">
+        <p>Long months of waiting...</p>
+        <a href="#" class="more" data-modal="modal7">More</a>
+      </div>
+    </div>
+
+    <!-- CARD 8 -->
+    <div class="story-card">
+      <div class="image-box">
+        <img src="img/freedom.jpg" alt="">
+      </div>
+      <div class="text-box">
+        <p>After her release...</p>
+        <a href="#" class="more" data-modal="modal8">More</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= MODALS ================= -->
+
+<!-- TEMPLATE: COPY & CHANGE IMAGE + TEXT -->
+
+<div class="modal-overlay" id="modal1">
+  <div class="modal-window split">
+    <div class="modal-image"><img src="img/child.jpg"></div>
+    <div class="modal-text">
+      <button class="modal-close" onclick="closeModal('modal1')">×</button>
+      <p>Since childhood,<br>
+        Amanda dreamed<br>
+        of traveling<br>
+        and telling stories <br>
+        about distant and <br>
+        dangerouse <br>
+        world.
+    </p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal2">
+  <div class="modal-window split">
+    <div class="modal-image"><img src="img/travel.jpg"></div>
+    <div class="modal-text">
+      <button class="modal-close" onclick="closeModal('modal2')">×</button>
+      <p>She becomes a<br>
+         freelance <br> 
+         journalist and <br>
+         consiciously <br>
+         choosen to work <br>
+         in conflict zones.
+    </p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal3">
+  <div class="modal-window split">
+    <div class="modal-image"><img src="img/somali.jpg"></div>
+    <div class="modal-text">
+      <button class="modal-close" onclick="closeModal('modal3')">×</button>
+      <p>Amanda travels to<br> 
+        Somalia with<br> 
+        photographer <br> 
+        Nigel Brennan, <br>
+        aware of the <br>
+        serious risks <br>
+        involved. 
+    </p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal4">
+  <div class="modal-window split">
+    <div class="modal-image"><img src="img/capture.jpg"></div>
+    <div class="modal-text">
+      <button class="modal-close" onclick="closeModal('modal4')">×</button>
+      <p>Journalists are<br>
+        captured by<br>
+        armed militants, <br>
+        and their lives <br>
+        change <br>
+        dramatically. 
+    
+    </p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal5">
+  <div class="modal-window split">
+    <div class="modal-image"><img src="img/pain.jpg"></div>
+    <div class="modal-text">
+      <button class="modal-close" onclick="closeModal('modal5')">×</button>
+      <p>
+        Amanda <br>
+        experiences harsh <br>  
+        conditions, <br>
+        violence, and <br>
+        constant fear for <br>
+         her life.
+    </p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal6">
+  <div class="modal-window split">
+    <div class="modal-image"><img src="img/sky.png"></div>
+    <div class="modal-text">
+      <button class="modal-close" onclick="closeModal('modal6')">×</button>
+      <p>
+        In order not to <br>
+        break down, she <br> 
+        creates in her <br> 
+        imagination a <br> 
+        "house in the sky" <br> 
+        as a symbol of <br> 
+        hope and <br> 
+        freedom.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal7">
+  <div class="modal-window split">
+    <div class="modal-image"><img src="img/weit.jpg"></div>
+    <div class="modal-text">
+      <button class="modal-close" onclick="closeModal('modal7')">×</button>
+      <p>The logn month<br>
+        of captivity are <br> 
+        accompanied <br>
+        painful waiting <br>
+        and the struggle <br>
+        for faith in <br>
+        salvation. 
+    </p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal8">
+  <div class="modal-window split">
+    <div class="modal-image"><img src="img/freedom.jpg"></div>
+    <div class="modal-text">
+      <button class="modal-close" onclick="closeModal('modal8')">×</button>
+      <p>After her release,<br>
+        Amanda goes <br>
+        througha a <br>
+        difficult journey<br>
+        of recovery and <br>
+        rethinking the <br> 
+        value of freedom.
+    </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal-overlay" id="modal8">
+  <div class="modal-window split">
+    <div class="modal-text">
+      <button class="modal-close" onclick="closeModal('modal8')">×</button>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+<a href="#" class="but" data-modal="photoModal">
+    Links for photo
+  </a>
+
+  
+  <div class="modal-overlay " id="photoModal">
+    <div class="modal-window modal-photos">
+  
+      <!-- Верхній ряд -->
+      <div class="photos-row top">
+        <img src="img/child.jpg" alt="child">
+        <img src="img/travel.jpg" alt="travel">
+        <img src="img/somali.jpg" alt="somali">
+        <img src="img/capture.jpg" alt="capture">
+      </div>
+  
+      <!-- Центр -->
+      <div class="photos-center">
+        <a href="https://unsplash.com/" target="_blank">
+            https://unsplash.com/
+        </a>
+      </div>
+  
+      <!-- Нижній ряд -->
+      <div class="photos-row bottom">
+        <img src="img/sky.png" alt="sky">
+        <img src="img/pain.jpg" alt="pain">
+        <img src="img/weit.jpg" alt="weit">
+        <img src="img/freedom.jpg" alt="freedom">
+      </div>
+  
+    </div>
+  </div>
+  
+
+
+<!-- Footer -->
+<div class="footer">
+    <div class="footer-inner">
+  
+      <div class="footer-logo">
+        <img src="img/logo.jpg" alt="logo">
+      </div>
+  
+      <div class="footer-links">
+        <a href="https://github.com/">
+          <img src="img/icon/github.svg" alt="github">
+        </a>
+        <a href="https://www.figma.com/files/team/1513668501891285784/recents-and-sharing?fuid=1513668499750125164">
+          <img src="img/icon/figma.svg" alt="figma">
+        </a>
+        <a href="https://t.me/alexkhalus">
+          <img src="img/icon/telegram.svg" alt="telegram">
+        </a>
+        <a href="https://www.threads.com/@oleksandr.khalus?xmt=AQF0E_HWFyUzpmPRPsYPTN-Mr_BtyS7oC_ek5dUuiu0k0x8">
+          <img src="img/icon/instagram.svg" alt="instagram">
+        </a>
+      </div>
+  
+    </div>
+  </div>
+
+
+  
+<script src="script.js"></script>
+</body>
+</html>

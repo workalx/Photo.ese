@@ -1,0 +1,278 @@
+:root {
+  --title-font: "Irish Grover", system-ui;
+  --text-font: "Instrument Serif", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--text-font);
+  
+  color: #000;
+}
+
+/* HEADER */
+.header {
+  height: 600px;
+  background: #1ed830;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content h1 {
+  font-family: var(--title-font);
+  font-size: 90px;
+  color: #fff;
+}
+
+.header-content p {
+  font-size: 70px;
+  color: #fff;
+  text-align: right;
+}
+
+.head {
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 70px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  gap: 40px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.story-card {
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.image-box img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.text-box {
+  background: #1ed830;
+  padding: 20px;
+}
+
+.text-box p {
+  font-size: 30px;
+  color: #fff;
+}
+
+.more {
+  display: block;
+  text-align: right;
+  font-size: 30px;
+  color: #130c63;
+  text-decoration: none;
+}
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* SPLIT MODAL */
+.modal-window.split {
+  display: flex;
+  width: 900px;
+  height: 500px;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #1ed830;
+}
+
+/* IMAGE */
+.modal-image {
+  width: 50%;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEXT */
+.modal-text {
+  width: 50%;
+  padding: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.modal-text p {
+  font-size: 48px;
+  color: #fff;
+  line-height: 1.1;
+}
+
+/* CLOSE */
+.modal-close {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font-size: 48px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ===============================
+   PHOTO MODAL (isolated styles)
+   =============================== */
+
+   .modal-window.modal-photos {
+    width: 900px;
+    height: 700px;
+    background: #1ed830;
+    border-radius: 28px;
+    overflow: hidden;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* ----- rows ----- */
+  .modal-photos .photos-row {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+  }
+  
+  /* верхній ряд торкається верху */
+  .modal-photos .photos-row.top {
+    padding-top: 0;
+  }
+  
+  /* нижній ряд торкається низу */
+  .modal-photos .photos-row.bottom {
+    padding-bottom: 0;
+  }
+  
+  /* ----- images ----- */
+  .modal-photos .photos-row img {
+    width: 193px;
+    height: 313px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  /* ----- center link ----- */
+  .modal-photos .photos-center {
+    flex: 1; /* центр по вертикалі */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-photos .photos-center a {
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .modal-photos .photos-center a:hover {
+    text-decoration: underline;
+  }
+
+.but {
+    margin: 100px auto; /* 🔹 зверху/знизу 100px, по центру по горизонталі */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 411px;
+    height: 84px;
+    border-radius: 10px;
+    background-color: #1ed830;
+  
+    font-family: var(--title-font);
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 112%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+
+.footer {
+  background: #1ed830;
+  height: 200px;            /* 🔹 обовʼязково */
+}
+
+.footer-inner {
+  display: flex;
+  height: 100%;
+}
+
+/* ===== ЛІВА ЧАСТИНА ===== */
+.footer-logo {
+  width: 30%;
+  height: 100%;
+}
+
+.footer-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 15px;       /* або contain */
+}
+
+/* ===== ПРАВА ЧАСТИНА ===== */
+.footer-links {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding-right: 130px;     /* 🔹 відступ від правого краю */
+  gap: 38px;                /* 🔹 відступ між SVG */
+}
+
+.footer-links img {
+  width: 70px;              /* опціонально */
+  height: 70px;
+  
+}
