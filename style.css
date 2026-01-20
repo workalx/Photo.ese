@@ -46,6 +46,9 @@ body {
   margin-top: 100px;
   margin-bottom: 80px;
 }
+.img {
+  justify-content: flex-start;
+}
 
 /* GRID */
 .grid {
@@ -276,3 +279,4 @@ body {
   height: 70px;
   
 }
+
