@@ -46,8 +46,11 @@ body {
   margin-top: 100px;
   margin-bottom: 80px;
 }
-.img {
-  justify-content: flex-start;
+.header .img {
+  display: flex;
+  margin-left: 20px;
+  border-radius: 20px;
+  justify-content: start;
 }
 
 /* GRID */
@@ -279,4 +282,5 @@ body {
   height: 70px;
   
 }
+
 
